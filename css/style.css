@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+:root {
+  --main-color: #3f3f3f;
+}
+
 a {
   text-decoration: none;
 }
@@ -60,14 +64,14 @@ header {
 
 .link-txt {
   font-family: helvetica, sans-serif;
-  color: #3f3f3f;
+  color: var(--main-color);
   font-size: 15px;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
 .link-txt:hover {
-  background-color: #3f3f3f;
+  background-color: var(--main-color);
   color: white;
   transition: ease-in-out 0.3s;
 }
