@@ -1,0 +1,25 @@
+.prod-site-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.prod-img-container {
+  width: 100%;
+  height: 80vw;
+}
+
+.product-image {
+  height: 100%;
+  background-image: url("../images/placeholder.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 600px) {
+  .prod-site-container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
