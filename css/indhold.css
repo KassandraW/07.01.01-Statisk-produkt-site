@@ -7,7 +7,7 @@ main {
 
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #3f3f3f;
+  color: var(--main-color);
 }
 
 .indhold-container {
@@ -24,7 +24,7 @@ h1 {
   flex-direction: column;
 }
 .cat-container {
-  border: 2px #a3a3a3 solid;
+  border: 2px var(--cat) solid;
   height: 50px;
   width: 70%;
   margin: 1em 0;
@@ -33,13 +33,13 @@ h1 {
   align-items: center;
 }
 .cat-container:hover {
-  background-color: #a3a3a3;
+  background-color: var(--cat);
   transition: ease-in-out 0.3s;
 }
 
 .cat-txt {
   font-family: Helvetica, sans-serif;
-  color: #3f3f3f;
+  color: var(--main-color);
   font-size: 20px;
 }
 
@@ -74,7 +74,7 @@ h1 {
 .title {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #3f3f3f;
+  color: var(--main-color);
 }
 
 .price {
