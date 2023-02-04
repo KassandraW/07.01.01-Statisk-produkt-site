@@ -20,6 +20,14 @@ function showProduct(product) {
     ".info"
   ).textContent = `${product.category} | ${product.brandname}`;
   copy.querySelector(".price").textContent = `${product.price} kr,-`;
+  copy.querySelector(
+    "img"
+  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  if (product.soldout) {
+    //produktet er udsolgt
+    copy.querySelector(".price").textContent = "udsolgt";
+    copy.querySelector(".price").classList.add("soldout");
+  }
 
   //appende hvor den skal være i DOM
   document.querySelector(".grid-produkter").appendChild(copy);

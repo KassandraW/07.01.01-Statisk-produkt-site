@@ -9,6 +9,13 @@
   --hover: #c4e3e9;
 }
 
+.soldout {
+  background-color: rgb(211, 31, 31);
+  padding: 3px;
+  margin: 3px 0;
+  color: white !important;
+}
+
 a {
   text-decoration: none;
 }
