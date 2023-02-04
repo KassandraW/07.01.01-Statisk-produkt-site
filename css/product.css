@@ -6,15 +6,40 @@
 
 .prod-img-container {
   width: 100%;
-  height: 80vw;
+  height: vw;
+  display: flex;
+  justify-content: center;
 }
 
-.product-image {
-  height: 100%;
-  background-image: url("../images/placeholder.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+.prod-name {
+  font-size: 20px;
 }
+
+.prod-brand {
+  color: gray;
+}
+
+.margin {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.size-container {
+  border: 2px solid rgb(192, 192, 192);
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.size {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* .product-image {
+  height: 60%;
+} */
 
 @media only screen and (min-width: 600px) {
   .prod-site-container {
