@@ -35,9 +35,20 @@
     <main>
       <div class="produkt-container">
         <div class="flex-center">
-          <h1>Kategori navn</h1>
+          <h1>Flotte Hunde</h1>
           <div class="grid-produkter">
-            <a class="card-container" href="product.html">
+            <template id="smallProductTemplate">
+              <a class="card-container" href="product.html">
+                <div class="prod-image"></div>
+                <div class="prod-txt-container">
+                  <div class="title">Produktnavn</div>
+                  <div class="info">info</div>
+                  <div class="price">kr. xxx</div>
+                </div>
+              </a>
+            </template>
+
+            <!-- <a class="card-container" href="product.html">
               <div class="prod-image"></div>
               <div class="prod-txt-container">
                 <div class="title">Produktnavn</div>
@@ -57,19 +68,13 @@
                 <div class="title">Produktnavn</div>
                 <div class="price">kr. xxx</div>
               </div>
-            </a>
-            <a class="card-container" href="product.html">
-              <div class="prod-image"></div>
-              <div class="prod-txt-container">
-                <div class="title">Produktnavn</div>
-                <div class="price">kr. xxx</div>
-              </div>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
     </main>
 
     <footer></footer>
+    <script src="js/productlist.js"></script>
   </body>
 </html>
