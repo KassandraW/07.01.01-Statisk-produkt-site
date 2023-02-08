@@ -1,10 +1,20 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
   .then((res) => res.json())
   .then((data) => showProducts(data));
 
 function showProducts(products) {
   //looper og kalder showProduct
   products.forEach(showProduct);
+
+  visOverskrift();
+}
+
+function visOverskrift() {
+  document.querySelector("h1").textContent = category;
+  console.log("OVERSKRIFT");
 }
 
 function showProduct(product) {
@@ -25,13 +35,14 @@ function showProduct(product) {
   ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   if (product.soldout) {
-
     //produktet er udsolgt
     copy.querySelector(".price").textContent = "udsolgt";
     copy.querySelector(".price").classList.add("soldout");
   }
 
-  copy.querySelector(".card-container").setAttribute("href",`product.html?id=${product.id}`)
+  copy
+    .querySelector(".card-container")
+    .setAttribute("href", `product.html?id=${product.id}`);
 
   //appende hvor den skal være i DOM
   document.querySelector(".grid-produkter").appendChild(copy);
