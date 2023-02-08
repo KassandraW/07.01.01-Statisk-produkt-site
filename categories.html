@@ -12,64 +12,39 @@
   </head>
 
   <body>
-  <header>
-    <div class="nav-container">
-      <div class="nav-logo"></div>
-      <div class="nav-menu">
-        <div class="nav-items">
-          <div class="nav-item">
-            <a class="link-txt" href="index.html">Home</a>
-          </div>
-          <div class="nav-item">
-            <a class="link-txt active" href="categories.html">Categories</a>
-          </div>
-          <div class="nav-item">
-            <a class="link-txt" href="">Brands</a>
-          </div>
-          <div class="nav-item">
-            <a class="link-txt" href="">Seasons</a>
+    <header>
+      <div class="nav-container">
+        <div class="nav-logo"></div>
+        <div class="nav-menu">
+          <div class="nav-items">
+            <div class="nav-item">
+              <a class="link-txt" href="index.html">Home</a>
+            </div>
+            <div class="nav-item">
+              <a class="link-txt active" href="categories.html">Categories</a>
+            </div>
+            <div class="nav-item">
+              <a class="link-txt" href="">Brands</a>
+            </div>
+            <div class="nav-item">
+              <a class="link-txt" href="">Seasons</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <div class="indhold-container">
-      
-      <a class="cat-container" href="products.html">
-        <div class="cat-txt">
-          Accessories
-        </div>
-      </a>
-      <a class="cat-container" href="products.html">
-        <div class="cat-txt">
-          Apparel
-        </div>
-      </a><a class="cat-container" href="products.html">
-        <div class="cat-txt">
-          Footwear
-        </div>
-      </a><a class="cat-container" href="products.html">
-        <div class="cat-txt">
-          Free Items
-        </div>
-      </a><a class="cat-container" href="products.html">
-        <div class="cat-txt">
-          Personal Care
-        </div>
-      </a><a class="cat-container" href="products.html">
-        <div class="cat-txt">
-          Sporting Goods
-        </div>
-      </a>
+    <main>
+      <div class="indhold-container">
+        <template id="katTemplate">
+          <a class="cat-container" href="products.html">
+            <div class="cat-txt">Accessories</div>
+          </a>
+        </template>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-   
-  </footer>
-<script src="js/categories.js"></script>
+    <footer></footer>
+    <script src="js/categories.js"></script>
   </body>
 </html>
