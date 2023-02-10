@@ -12,9 +12,19 @@
 
 .soldout {
   background-color: rgb(211, 31, 31);
-  padding: 3px;
-  margin: 3px 0;
-  color: white !important;
+  padding: 10px 20px;
+  width: min-content;
+}
+
+.udsolgt {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.discount {
+  text-decoration: line-through;
+  color: rgb(194, 194, 194) !important ;
 }
 
 a {

@@ -34,43 +34,29 @@
 
     <main>
       <div class="produkt-container">
+        <a class="link-txt" href="categories.html">tilbage</a>
+        <h1>Kategori</h1>
         <div class="flex-center">
-          <a class="link-txt" href="categories.html">tilbage</a>
-          <h1>Kategori</h1>
-
           <div class="grid-produkter">
             <template id="smallProductTemplate">
-              <a class="card-container" href="product.html" >
-                <img class="prod-image" src="" alt="" />
-                <div class="prod-txt-container">
+              <a class="card-container" href="product.html">
+                <div class="prod-image-container">
+                  <img class="prod-image" src="" alt="" />
+                </div>
+                <div class="content-container">
                   <div class="title">Produktnavn</div>
                   <div class="info">info</div>
-                  <div class="price">kr. xxx</div>
+                  <div>
+                    <div class="price">kr. xxx</div>
+                    <div class="if-discount"></div>
+                  </div>
+
+                  <div class="price-container">
+                    <div class="udsolgt"></div>
+                  </div>
                 </div>
               </a>
             </template>
-
-            <!-- <a class="card-container" href="product.html">
-              <div class="prod-image"></div>
-              <div class="prod-txt-container">
-                <div class="title">Produktnavn</div>
-                <div class="price">kr. xxx</div>
-              </div>
-            </a>
-            <a class="card-container" href="product.html">
-              <div class="prod-image"></div>
-              <div class="prod-txt-container">
-                <div class="title">Produktnavn</div>
-                <div class="price">kr. xxx</div>
-              </div>
-            </a>
-            <a class="card-container" href="product.html">
-              <div class="prod-image"></div>
-              <div class="prod-txt-container">
-                <div class="title">Produktnavn</div>
-                <div class="price">kr. xxx</div>
-              </div>
-            </a> -->
           </div>
         </div>
       </div>
@@ -80,3 +66,5 @@
     <script src="js/productlist.js"></script>
   </body>
 </html>
+
+<!-- FIKS SOLDOUT OG DISCOUNT -->

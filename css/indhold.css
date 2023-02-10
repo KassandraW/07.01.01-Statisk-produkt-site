@@ -10,30 +10,88 @@ h1 {
   color: var(--main-color);
 }
 
-.indhold-container {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .flex-center {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
+/* Produktliste */
+
+.card-container {
+  max-width: 450px;
+  height: 450px;
+  background: #ffffff;
+  margin: 50px auto;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.prod-image-container {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-produkter {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.content-container {
+  padding: 15px;
+}
+
+.price-container {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--main-color);
+}
+
+.info {
+  font-family: Helvetica, sans-serif;
+  color: #7e7e7e;
+  margin: 10px 0;
+}
+
+.price,
+.if-discount {
+  font-family: Helvetica, sans-serif;
+  color: #1e1d1d;
+}
+
+.if-discount {
+  color: rgb(235, 11, 11);
+}
+
+.prod-image {
+  height: 83%;
+}
+
+/* kategori */
+
 .cat-container {
-  border: 2px var(--cat) solid;
   height: 50px;
   width: 70%;
   margin: 1em 0;
+  background: #ffffff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .cat-container:hover {
-  background-color: var(--cat);
+  background-color: rgb(220, 232, 232);
   transition: ease-in-out 0.3s;
 }
 
@@ -43,49 +101,16 @@ h1 {
   font-size: 20px;
 }
 
-.produkt-container {
-  width: 75%;
-  height: 100%;
-}
-
-.card-container {
-  width: 100%;
-  height: 100%;
-  border: 2px red solid;
-}
-
-.prod-image {
-  height: 83%;
-}
-
-.grid-produkter {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1em;
-}
-
-.title {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: var(--main-color);
-}
-
-.price,
-.info {
-  font-family: Helvetica, sans-serif;
-  color: #7e7e7e;
+.indhold-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 600px) {
   .grid-produkter {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .card-container {
-    height: 30vw;
-    margin: 30px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -96,9 +121,6 @@ h1 {
 
   .grid-produkter {
     width: 85%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .card-container {
-    height: 20vw;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

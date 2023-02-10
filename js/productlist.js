@@ -36,8 +36,14 @@ function showProduct(product) {
 
   if (product.soldout) {
     //produktet er udsolgt
-    copy.querySelector(".price").textContent = "udsolgt";
-    copy.querySelector(".price").classList.add("soldout");
+    copy.querySelector(".udsolgt").textContent = "udsolgt";
+    copy.querySelector(".price-container").classList.add("soldout");
+  }
+
+  if (product.discount) {
+    //produktet er udsolgt
+    copy.querySelector(".price").classList.add("discount");
+    copy.querySelector(".if-discount").textContent = `nu `;
   }
 
   copy
