@@ -1,11 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
-  const id =urlParams.get("id");
+const id = urlParams.get("id");
 
 fetch("https://kea-alt-del.dk/t7/api/products/" + id)
   .then((response) => response.json())
   .then((data) => showProduct(data));
-
-  
 
 function showProduct(product) {
   console.log(product);
@@ -14,7 +12,15 @@ function showProduct(product) {
   document.querySelector(".prod-brand").textContent = product.brandname;
   document.querySelector(".prod-price").textContent = `${product.price} kr,-`;
   document.querySelector(".prod-color").textContent = product.basecolour;
-  document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`
+  document.querySelector(
+    "img"
+  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+
+  // tilbage knappen
+
+  document
+    .querySelector(".tilbage-fra-produkt")
+    .setAttribute("href", `products.html?category=${product.category}`);
 }
 
 // SE DEN HER VIDEO https://www.youtube.com/watch?v=pmWaikKHV0s
